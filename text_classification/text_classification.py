@@ -2,7 +2,7 @@ import os
 import jieba
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import metrics
-from sklearn.naive_bayes import MultinomialNB, GaussianNB
+from sklearn.naive_bayes import MultinomialNB
 
 def cut_words(file_path):
     text_with_spaces = ''
