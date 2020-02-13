@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -16,17 +14,15 @@ print(data.columns)
 print(data.head(5))
 print(data.describe())
 
-features_mean= list(data.columns[2:12])
-features_se= list(data.columns[12:22])
-features_worst=list(data.columns[22:32])
+features_mean = list(data.columns[2:12])
+features_se = list(data.columns[12:22])
+features_worst =list(data.columns[22:32])
 
-# 数据清洗
-data.drop("id",axis=1,inplace=True)
+data.drop("id",axis=1,inplace=True) # 数据清洗
 
 data['diagnosis'] = data['diagnosis'].map({'M':1,'B':0})
 
-# 热力图显示
-sns.countplot(data['diagnosis'],label="Count")
+sns.countplot(data['diagnosis'],label="Count")# 热力图显示
 plt.show()
 
 corr = data[features_mean].corr() # 表示features_mean字段之间的相关性
@@ -46,9 +42,9 @@ test_X= test[features_remain]
 test_y =test['diagnosis']
 
 # 采用Z-Score规范化数据，保证每个特征维度的数据均值为0，方差为1
-ss = StandardScaler()
-train_X = ss.fit_transform(train_X)
-test_X = ss.transform(test_X)
+transformer = StandardScaler()
+train_X = transformer.fit_transform(train_X)
+test_X = transformer.transform(test_X)
 
 mode = 1  #different mode you can change
 

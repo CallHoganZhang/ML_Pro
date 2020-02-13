@@ -1,9 +1,8 @@
-# 中文文本分类
 import os
 import jieba
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import metrics
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import MultinomialNB, GaussianNB
 
 def cut_words(file_path):
     text_with_spaces = ''
@@ -45,13 +44,18 @@ stop_words = open('data/stop/stopword.txt', 'r', encoding='utf-8').read()
 stop_words = stop_words.encode('utf-8').decode('utf-8-sig') # 列表头部\ufeff处理
 stop_words = stop_words.split('\n')
 
-# 计算单词权重
+# 计算单词权重，得到特征矩阵
+#当设置为浮点数时，过滤出现在超过max_df/低于min_df比例的句子中的词语；
+# 正整数时,则是超过max_df句句子。
 tf = TfidfVectorizer(stop_words=stop_words, max_df=0.5)
 
 train_features = tf.fit_transform(train_words_list)
 test_features = tf.transform(test_words_list)
 
+
+
+# 适用于离散， alpha > 0 为进行拉普拉斯平滑，0则不进行
 clf = MultinomialNB(alpha=0.001).fit(train_features, train_labels)
 predicted_labels=clf.predict(test_features)
-
 print('准确率为：', metrics.accuracy_score(test_labels, predicted_labels))
+
