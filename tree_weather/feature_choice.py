@@ -30,6 +30,16 @@ def evaluate(model, test_features, test_labels):
     print('平均气温误差.',np.mean(errors))
     print('Accuracy = {:0.2f}%.'.format(accuracy))
 
+def rfFit(randomForest, model, param, train_features, train_labels):
+    rf_random = model(estimator=randomForest, param_distributions=param,
+                              n_iter = 10, scoring='neg_mean_absolute_error',
+                              cv = 3, verbose=2, random_state=42, n_jobs=-1)
+
+    rf_random.fit(train_features, train_labels)
+    print('best_params_', rf_random.best_params_)
+    best_random = rf_random.best_estimator_
+    return best_random
+
 array_features, array_labels, dropped_features_list = encoding_features(data_load.features)
 train_features, test_features, train_labels, test_labels = train_test_split(array_features, array_labels, test_size = 0.1, random_state = 0)
 
@@ -66,21 +76,6 @@ random_grid = {'n_estimators': n_estimators,
                'min_samples_leaf': min_samples_leaf,
                'bootstrap': bootstrap}
 
-# rf_random.fit(train_features, train_labels)
-# print('best_params_', rf_random.best_params_)
-
-# best_random = rf_random.best_estimator_
-# evaluate(best_random, test_features, test_labels)
-
-
-def rfFit(randomForest, model, param):
-    rf_random = model(estimator=randomForest, param_distributions=param,
-                              n_iter = 10, scoring='neg_mean_absolute_error',
-                              cv = 3, verbose=2, random_state=42, n_jobs=-1)
-    return rf_random
-
-randomForestResult = rfFit(RandomForestRegressor(), RandomizedSearchCV, random_grid)
-
 param_grid = {
     'bootstrap': [True],
     'max_depth': [8,10,12],
@@ -90,15 +85,8 @@ param_grid = {
     'n_estimators': [800, 900, 1000, 1200]
 }
 
-rf = RandomForestRegressor()
+RandomizedSearch = rfFit(RandomForestRegressor(), RandomizedSearchCV, random_grid, train_features, train_labels)
+GridSearch = rfFit(RandomForestRegressor(), GridSearchCV, param_grid, train_features, train_labels)
 
-# 网络搜索
-grid_search = GridSearchCV(estimator = rf, param_grid = param_grid,
-                           scoring = 'neg_mean_absolute_error', cv = 3,
-                           n_jobs = -1, verbose = 2)
-
-grid_search.fit(train_features, train_labels)
-print('best_params_', grid_search.best_params_)
-
-best_grid = grid_search.best_estimator_
-evaluate(best_grid, test_features, test_labels)
+evaluate(RandomizedSearch, test_features, test_labels)
+evaluate(GridSearch, test_features, test_labels)
