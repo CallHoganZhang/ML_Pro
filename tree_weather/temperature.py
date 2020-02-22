@@ -1,19 +1,9 @@
 import pandas as pd
-import datetime
 from sklearn.model_selection import train_test_split
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
 import data_load
 
-def change_date_type(features):
-    years = features['year']
-    months = features['month']
-    days = features['day']
-
-    dates = [str(int(year)) + '-' + str(int(month)) + '-' + str(int(day)) for year, month, day in
-             zip(years, months, days)]
-    dates = [datetime.datetime.strptime(date, '%Y-%m-%d') for date in dates]
-    return dates
 
 def encoding_features(features):
     onehot_coding_features = pd.get_dummies(features) #one hot coding
@@ -46,8 +36,6 @@ def new_data_feature(train_features, test_features, feature_indices):
     original_test_features = test_features[:, feature_indices]
     return original_train_features, original_test_features
 
-dates = change_date_type(data_load.features)
-# print(dates)
 
 array_features, array_labels, dropped_features_list = encoding_features(data_load.features)
 train_features, test_features, train_labels, test_labels = train_test_split(array_features, array_labels, test_size = 0.1, random_state = 0)
