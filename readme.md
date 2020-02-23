@@ -15,6 +15,13 @@ I divide into three group according to these different label and
 show visualization by seaborn,matplot.
 Correlation picture and heatmap will show through above method.
 After StandardScaler transform,you can choose different model to obverse thier accuracy.
-In the choice of SVM model,i provide SVC and LinearSVC for fitting data.
+In the choice of SVM model,I provide SVC and LinearSVC for fitting data.
 Besides, before fitting the data,i will normalized data in order to ensure that
 the mean of the data is 0, and the variance is 1.
+
+In the tree_weather project,i want to predict the weather by randomForest algorithm.
+In this project,I tring to the one_hot coding,you can processing your data by this method.
+I test the capability of this model through method in different amount data, different features.
+You can find these difference result in different amount or different features.
+Besides, I also paint some picture through matplot,you can observer the tendency 
+by after  time processing.
