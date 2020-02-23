@@ -22,7 +22,7 @@
       <file leaf-file-name="text_classification.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text_classification/text_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
+            <state relative-caret-position="1470">
               <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -43,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feature_choice.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="feature_choice.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tree_weather/feature_choice.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="617">
@@ -51,6 +51,16 @@
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stopword.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text_classification/data/stop/stopword.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="breast_svm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="breast_svm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/breast_cancer_data-master/breast_svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="28" />
+            <state relative-caret-position="402">
+              <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -169,11 +179,6 @@
               <item name="ML_Pro" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML_Pro" type="462c0819:PsiDirectoryNode" />
               <item name="breast_cancer_data-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ML_Pro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ML_Pro" type="462c0819:PsiDirectoryNode" />
-              <item name="text_classification" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ML_Pro" type="b2602c69:ProjectViewProjectNode" />
@@ -481,6 +486,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29317">
           <caret line="1543" column="43" lean-forward="false" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -544,6 +550,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29317">
           <caret line="1543" column="43" lean-forward="false" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -599,6 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29317">
           <caret line="1543" column="43" lean-forward="false" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -654,6 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29317">
           <caret line="1543" column="43" lean-forward="false" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -699,6 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29317">
           <caret line="1543" column="43" lean-forward="false" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,20 +751,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/breast_cancer_data-master/breast_linearsvm.py" />
-    <entry file="file://$PROJECT_DIR$/breast_cancer_data-master/breast_svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="44" column="28" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/python/Lib/site-packages/sklearn/feature_extraction/text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1900">
           <caret line="1543" column="43" lean-forward="false" selection-start-line="1543" selection-start-column="37" selection-end-line="1543" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -763,16 +764,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text_classification/text_classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -808,6 +799,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_classification/data/test/体育/1338.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_classification/data/stop/stopword.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_classification/text_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/breast_cancer_data-master/breast_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
