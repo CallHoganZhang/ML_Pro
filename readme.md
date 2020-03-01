@@ -1,8 +1,8 @@
-In text_classification,
-you can find some floder including text data divided into train,test,stop words.
 In this floder project, I want to do serveal experiment in order to help me improve understanding 
 machine learing algorithm and thier application scenarios.
 
+In text_classification,
+you can find some floder including text data divided into train,test,stop words.
 The train set and test set including sports,school,literature and woman.
 You can using these data realize the test of naive_bayes algorithm.
 In naive_bayes,you can choose differe1 model such as GaussianNB,MultinomialNB,BernoulliNB
@@ -10,9 +10,7 @@ to test this code.And you will get some quota like accuracy and some .
 In most condition, BernoulliNB is worse than MultinomialNB except in small amount data.
 Besides,if you use TfidfVectorizer this function,you will get the matrix which can show feature.
 
-
-In breast_cance_data-master,
-I use the data of breast_cance test accuracy of different SVM model.
+In breast_cance_data-master,I use the data of breast_cance test accuracy of different SVM model.
 By there data, you will find the mean information,se(stand error) information and worst imformation.
 I divide into three group according to these different label and 
 show visualization by seaborn,matplot.
@@ -30,3 +28,5 @@ I test the capability of this model through method in different amount data, dif
 You can find these difference result in different amount or different features.
 Besides, I also paint some picture through matplot,you can observer the tendency 
 by after  time processing.
+
+Besides, this project will update in succession when learing machine learing.
