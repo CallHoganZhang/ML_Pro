@@ -1,11 +1,14 @@
 In text_classification,
 you can find some floder including text data divided into train,test,stop words.
+In this floder project, I want to do serveal experiment in order to help me improve understanding 
+machine learing algorithm and thier application scenarios.
+
 The train set and test set including sports,school,literature and woman.
 You can using these data realize the test of naive_bayes algorithm.
 In naive_bayes,you can choose differe1 model such as GaussianNB,MultinomialNB,BernoulliNB
-to test this code.And you will get some index like accuracy.
+to test this code.And you will get some quota like accuracy and some .
 In most condition, BernoulliNB is worse than MultinomialNB except in small amount data.
-Besides,using TfidfVectorizer this function,you will get the matrix which can show feature.
+Besides,if you use TfidfVectorizer this function,you will get the matrix which can show feature.
 
 
 In breast_cance_data-master,
