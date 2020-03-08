@@ -29,4 +29,7 @@ You can find these difference result in different amount or different features.
 Besides, I also paint some picture through matplot,you can observer the tendency 
 by after  time processing.
 
+
+In the news_classification project.
+
 Besides, this project will update in succession when learing machine learing.
