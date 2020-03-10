@@ -30,6 +30,6 @@ Besides, I also paint some picture through matplot,you can observer the tendency
 by after  time processing.
 
 
-In the news_classification project.
+In the news_classification project.This is my newest prohect updated.
 
 Besides, this project will update in succession when learing machine learing.
