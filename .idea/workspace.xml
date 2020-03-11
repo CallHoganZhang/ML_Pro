@@ -11,7 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ML_Pro$feature_choice.coverage" NAME="feature_choice Coverage Results" MODIFIED="1582379380974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree_weather" />
-    <SUITE FILE_PATH="coverage/ML_Pro$classification.coverage" NAME="classification Coverage Results" MODIFIED="1583931133955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news_classification" />
+    <SUITE FILE_PATH="coverage/ML_Pro$classification.coverage" NAME="classification Coverage Results" MODIFIED="1583932173757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news_classification" />
     <SUITE FILE_PATH="coverage/ML_Pro$data_load.coverage" NAME="data_load Coverage Results" MODIFIED="1583931109760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree_weather" />
     <SUITE FILE_PATH="coverage/ML_Pro$plotPicture.coverage" NAME="plotPicture Coverage Results" MODIFIED="1582379743267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree_weather" />
     <SUITE FILE_PATH="coverage/ML_Pro$text_classification.coverage" NAME="text_classification Coverage Results" MODIFIED="1581599117779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text_classification" />
@@ -81,8 +81,8 @@
       <file leaf-file-name="classification.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news_classification/classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+            <state relative-caret-position="169">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#49#68#0" expanded="true" />
               </folding>
@@ -136,6 +136,7 @@
       <find>train_test_split</find>
       <find>data_load</find>
       <find>new_data_feature</find>
+      <find>pd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -845,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news_classification/classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+        <state relative-caret-position="169">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#49#68#0" expanded="true" />
           </folding>
