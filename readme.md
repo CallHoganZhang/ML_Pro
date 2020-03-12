@@ -30,6 +30,13 @@ Besides, I also paint some picture through matplot,you can observer the tendency
 by after  time processing.
 
 
-In the news_classification project.This is my newest prohect updated
+In the news_classification project.I hope to compare the accuracy between CountVectorizer and TfidfVectorizer.
+Before comparing those method, I fetch the data which can download by internet and convert to csv file.
+Like almost projects,I delete the stop words which could be influence the result and 
+those will not help fit data because they are meanless.
+When you split the  preprocessing data into train data and test data, you can start fitting .
+If you are intereting of TfidfVectorizer, you can deeply know about its principle that just like
+compute the weight of this words in this article in the way that compare numbers occuring in this article
+and other article. In the final result,the accracy of TfidfVectorizer are higher than CountVectorizer but not obvious.
 
 Besides, this project will update in succession when learing machine learing.
