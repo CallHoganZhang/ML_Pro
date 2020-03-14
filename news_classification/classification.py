@@ -85,6 +85,7 @@ texts=["dog cat fish","dog cat cat","fish bird", 'bird'] #为了简单期间，�
 cv = CountVectorizer() #词袋词频统计
 cv_fit=cv.fit_transform(texts) #转换数据
 
+
 print(cv.get_feature_names())
 print(cv_fit.toarray())
 
