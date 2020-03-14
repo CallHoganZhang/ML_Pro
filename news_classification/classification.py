@@ -55,10 +55,10 @@ contents_clean,all_words = drop_stopwords(contents,stopwords)
 df_content=pd.DataFrame({'contents_clean':contents_clean})
 print(df_content.head())
 
-index = 2400 #随便找一篇文章
+index = 100 #随便找一篇文章
 content_S_str = "".join(content_S[index])
-print (content_S_str)
-print ("  ".join(jieba.analyse.extract_tags(content_S_str, topK=5, withWeight=False)))#选出来5个核心词
+print ('content_S_str and index', index, content_S_str)
+print ("  ".join(jieba.analyse.extract_tags(content_S_str, topK=15, withWeight=False)))#选出来5个核心词
 
 df_train=pd.DataFrame({'contents_clean':contents_clean,'label':df_news['category']})
 print(df_train.tail())
