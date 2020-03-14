@@ -51,7 +51,7 @@ tf = TfidfVectorizer(stop_words=stop_words, max_df=0.5)
 
 train_features = tf.fit_transform(train_words_list)
 test_features = tf.transform(test_words_list)
-
+print('test_features', test_features)
 
 
 # 适用于离散， alpha > 0 为进行拉普拉斯平滑，0则不进行
