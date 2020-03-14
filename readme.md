@@ -39,4 +39,4 @@ If you are intereting of TfidfVectorizer, you can deeply know about its principl
 compute the weight of this words in this article in the way that compare numbers occuring in this article
 and other article. In the final result,the accracy of TfidfVectorizer are higher than CountVectorizer but not obvious.
 
-Besides, this project will update in succession when learing machine learing.
+Besides, this project will update in succession when learing machine learing contiously.
